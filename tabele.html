@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="kurs HTML5, kurs CSS, strona WWW, witryna internetowa, webmaster, pozycjonowanie" />
+  <meta name="description" content="Podstawy HTML5 dla uczniów technikum informatycznego" /> 
+  <meta name="author" content="Imię i nazwisko" />
+  <meta name="generator" content="Notepad++" />
+  <meta name="robots" content="all" />
+  <link href="style1.css" rel="stylesheet" type="text/css" />
+    <link href="style2.css" rel="stylesheet" type="text/css" />
+    <link href="styl_flex.css" rel="stylesheet" type="text/css" />
+  <style type="text/css">
+    table, th, td
+    {
+      border-collapse:collapse;
+      border:1px solid black;
+      padding:5px;
+    }
+  </style>
+  <title>Document</title>
+  <script src="script1.js"></script>
+</head>
+<body>
+  <header>
+    <img src="img/baner_glowny.png" />
+</header>
+<nav>
+    <a href="index.html">Start</a>
+    <a href="akapity.html">akapity</a>
+    <a href="formularze.html">Formularze 1</a>
+    <a href="tabele.html">Tabele</a>
+    <a href="elementy_osadzone.html">Multimedia</a>
+    <a href="warstwy.html">Warstwy</a>
+    <a href="pozycjonowanie.html">Pozycjonowanie</a>
+    <a href="display.html">Display</a>
+    <a href="kolory.html">Kolory</a>
+    <a href="czcionka.html">Tekst</a>
+    <a href="galeria.html">Galeria</a>
+</nav>
+  <main>
+    <aside>
+      to jest aside
+    </aside>
+    <article>
+      <h1>Tabele</h1>
+      
+        <hr />
+      <section>
+        <h2>Tabele proste</h2>
+        <table>
+            <tr>
+              <td>Pierwsza komórka pierwszego wiersza (pierwsza komórka tabeli)</td>
+              <td>Druga komórka pierwszego wiersza (druga komórka tabeli)</td>
+            </tr>
+            <tr>
+              <td>Pierwsza komórka drugiego wiersza (trzecia komórka tabeli)</td>
+              <td>Druga komórka drugiego wiersza (czwarta komórka tabeli)</td>
+            </tr>
+          </table>
+          <p></p>
+          <table>
+            <tr>
+              <th>Lp</th>
+              <th>Imię i nazwisko</th>
+              <th>Ocena</th>
+            </tr>
+            <tr>
+              <th>1</th>
+              <td>Jan Kowalski</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <th>2</th>
+              <td>Zdzisław Nowak</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <th>3</th>
+              <td>Bonifacy Brzęczyszczykiewicz</td>
+              <td>6</td>
+            </tr>
+          </table>    
+          <hr />
+      </section>
+      <hr />
+      <section>
+        <h2>Scalanie komórek tabeli</h2>
+        <p>Tabela niescalona</p>
+        <table>
+            <tr>
+               <th>1</th>
+               <th>2</th>
+               <th>3</th>
+               <th>4</th>
+               <th>5</th>
+               <th>6</th>
+            </tr>
+            <tr>
+                <th>1</th>
+                <td>a</td>
+                <td>b</td>
+                <td>c</td>
+                <td>d</td>
+                <td>e</td>
+            </tr>
+            <tr>
+                <th>1</th>
+                <td>f</td>
+                <td>g</td>
+                <td>h</td>
+                <td>i</td>
+                <td>j</td>
+            </tr>
+            <tr>
+                <th>1</th>
+                <td>k</td>
+                <td>l</td>
+                <td>m</td>
+                <td>n</td>
+                <td>o</td>
+            </tr>
+            <tr>
+                <th>1</th>
+                <td>p</td>
+                <td>q</td>
+                <td>r</td>
+                <td>s</td>
+                <td>t</td>
+            </tr>
+            <tr>
+                <th>1</th>
+                <td>u</td>
+                <td>v</td>
+                <td>w</td>
+                <td>y</td>
+                <td>z</td>
+            </tr>
+        </table>
+        <p>Tabela scalona</p>
+        <table>
+            <tr>
+              <th>1</th> <th>2</th> <th>3</th> <th>4</th> <th>5</th> <th>6</th>
+            </tr>
+            <tr>
+              <th>2</th> <td>a</td> <td colspan="2">b, c</td> <td>d</td> <td>e</td>
+            </tr>
+            <tr>
+              <th>3</th> <td>f</td> <td>g</td> <td>h</td> <td>i</td> <td rowspan="2">j, o</td>
+            </tr>
+            <tr>
+              <th>4</th> <td>k</td> <td>l</td> <td>m</td> <td>n</td>
+            </tr>
+            <tr>
+              <th>5</th> <td colspan="3" rowspan="2">p, q, r, u, v, w</td> <td>s</td> <td>t</td> 
+            </tr>
+            <tr>
+              <th>6</th> <td>y</td> <td>z</td>
+            </tr>
+          </table>
+
+      </section>
+      <hr />
+      <section>
+        <h2>Zagnieżdżanie tabel</h2>
+        <table>
+            <tr>
+              <td>Pierwsza komórka pierwszej tabeli</td> 
+              <td>Druga komórka pierwszej tabeli</td> 
+              <td>Trzecia komórka pierwszej tabeli</td> 
+            </tr>
+            <tr>
+              <td>Czwarta komórka pierwszej tabeli</td> 
+              <td>
+                <table>
+                  <tr>
+                    <td>Pierwsza komórka drugiej tabeli</td> 
+                    <td>Druga komórka drugiej tabeli</td> 
+                  </tr>
+                  <tr>
+                    <td>Trzecia komórka drugiej tabeli</td> 
+                    <td>czwarta komórka drugiej tabeli</td> 
+                  </tr>
+                </table>
+              </td> 
+              <td>Szósta komórka pierwszej tabeli</td> 
+            </tr>
+          </table>
+      </section>
+      <hr />
+      <section>
+        <h2>Nagłówek, ciało i stopka tabeli</h2>
+        <table>
+            <thead>
+              <tr>
+                <td>Nagłówek</td>
+              </tr>
+            </thead>
+              <tbody>
+              <tr>
+                <td>Ciało</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td>Stopka</td>
+              </tr>
+            </tfoot>
+          </table>
+      </section>
+      <hr />
+      <section>
+        <h2>Podpis tabeli</h2>
+        <h3>Podpis na górze</h3>
+        <div>
+            <table>
+              <caption>Podpis</caption>
+              <tr>
+                <td>1</td> <td>2</td> <td>3</td> <td>4</td>
+              </tr>
+              <tr>
+                <td>5</td> <td>6</td> <td>7</td> <td>8</td>
+              </tr>
+            </table>
+          </div>
+          <h3>Podpis na dole</h3>
+          <table>
+            <tr>
+              <td>1</td> <td>2</td> <td>3</td> <td>4</td>
+            </tr>
+            <tr>
+              <td>5</td> <td>6</td> <td>7</td> <td>8</td>
+            </tr>
+            <caption style="caption-side:bottom;">Podpis</caption>
+          </table>
+      </section>
+      <hr />
+      <section>
+        <h2>Użycie figure i figcaption</h2>
+        <figure>
+            <figcaption>Podpis</figcaption>
+            <table>
+              <tr>
+                <td>1</td> <td>2</td> <td>3</td> <td>4</td>
+              </tr>
+              <tr>
+                <td>5</td> <td>6</td> <td>7</td> <td>8</td>
+              </tr>
+            </table>
+          </figure>
+          <figure>
+            <table>
+              <tr>
+              <tr>
+                <td>1</td> <td>2</td> <td>3</td> <td>4</td>
+              </tr>
+              <tr>
+                <td>5</td> <td>6</td> <td>7</td> <td>8</td>
+              </tr>
+            </table>
+            <figcaption>Podpis</figcaption>
+      </section>
+    </article>
+   </main>
+
+    <footer>
+    Stopka: autorem strony jest JS
+  </footer>
+  <script src="script2.js"></script>
+</body>
+</html>

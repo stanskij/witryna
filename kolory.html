@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style1.css" rel="stylesheet" type="text/css" />
+    <link href="style2.css" rel="stylesheet" type="text/css" />
+    <link href="styl_flex.css" rel="stylesheet" type="text/css" />
+<style>
+   body
+{
+  background-image:url('img/bg.jpg');
+  background-repeat:repeat-x;
+  background-position:left 300px;
+  background-attachment:fixed;
+}
+div
+{
+  display:inline-block;
+  width:200px;
+  height:200px;
+  border:1px solid black;
+  background-color:green;
+  background-image:url('img/bg.jpg');
+} 
+div a
+{
+  display:block;
+  width:70px;
+  height:40px;
+  background-image:url('img/bg.png');
+  background-position:0 0;
+  border:2px solid blue;
+  border-radius:5px;
+}
+section > div a:hover
+{
+  background-position:0 -40px;
+}
+section > div.przycisk
+{
+  display:block;
+  height:30px; 
+  width:300px;
+  background-color:#f2f7fb; 
+  line-height:30px; 
+  text-align:center;
+  font-family:Arial; 
+  color:black;
+  font-size:17px; 
+  font-weight:bold; 
+  border:4px outset #02639a; 
+  border-radius:10px;
+  letter-spacing:4px;
+  background-image: none; 
+}
+section > div.przycisk:active
+{
+  border-style:inset; 
+  border-width:2px;
+  
+}      
+
+section > div.przycisk > a.a1
+{
+  text-decoration:none;
+  display:block;
+  cursor:default;
+}
+
+</style>
+</head>
+<body>
+  <header>
+    <img src="img/baner_glowny.png" />
+</header>
+<nav>
+    <a href="index.html">Start</a>
+    <a href="akapity.html">akapity</a>
+    <a href="formularze.html">Formularze 1</a>
+    <a href="tabele.html">Tabele</a>
+    <a href="elementy_osadzone.html">Multimedia</a>
+    <a href="warstwy.html">Warstwy</a>
+    <a href="pozycjonowanie.html">Pozycjonowanie</a>
+    <a href="display.html">Display</a>
+    <a href="kolory.html">Kolory</a>
+    <a href="czcionka.html">Tekst</a>
+    <a href="galeria.html">Galeria</a>
+</nav>
+    <main>
+        <aside>
+            to jes aside
+        </aside>
+    
+            <article>
+              <section>
+                <h2>Właściwość tło - <i>background</i></h2>
+                <div>
+                </div>
+                <div style="background-repeat:no-repeat;">
+                </div>
+                <div style="background-repeat:no-repeat;background-position: center top;">
+                </div>
+                <div style="background-repeat:no-repeat;background-position: left top;">
+                </div>
+                <div style="background-repeat:no-repeat;background-position: left;">
+                </div>
+                <div style="background-repeat:no-repeat;background-position: right;">
+                </div>
+                <div style="background-repeat:no-repeat;background-position: center center;">
+                </div>
+           
+                <div style="background-repeat:no-repeat;background-position: 10px 30px;">
+                </div>
+                <div style="background-repeat:repeat-x;background-position: 30px 30px;">
+                </div>
+                
+                <div>
+                </div>
+              </section> 
+              <section>
+                <h2>Zastosowanie tła obrazkowego do utworzenia przycisku</h2>
+                <div>
+                    <a href="http://validator.w3.org/" target="_blank"></a>
+                  </div>  
+            </section> 
+            <section>
+                <h2>ramki</h2>
+                <p style="border: 2px dashed red;">dashed</p>
+                <p style="border: 2px dotted red;">dotted</p>
+                <p style="border: 2px solid red;">solid</p>
+                <p style="border: 5px double red;">double</p>
+                <p style="border: 5px groove red">groove</p>
+                <p style="border: 5px ridge red">ridge</p>
+                <p style="border: 10px inset red">inset</p>
+                <p style="border: 10px outset red">outset</p>
+            </section>
+            
+            </article>
+            <article>
+                <section>
+                    <h2>przycisk</h2>
+                    <div class="przycisk">
+                        <a href="http://www.glowacki.p9.pl" class="a1">Strona naszej szkoły</a>
+                      </div> 
+                </section>
+            </article>
+        
+    </main>
+    <footer></footer>
+</body>
+</html>

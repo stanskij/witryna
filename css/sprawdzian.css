@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  
+}
+
+.header {
+  text-align: center;
+  padding: 16px;
+  background-color: rgb(199, 76, 55);
+}
+
+.wiersz {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.kolumna {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.kolumna img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .kolumna {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .kolumna {
+    flex: 100%;
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style1.css" rel="stylesheet" type="text/css" />
+    <link href="style2.css" rel="stylesheet" type="text/css" />
+    <link href="styl_flex.css" rel="stylesheet" type="text/css" />
+    <style>
+        .div_1, .div_2
+            {
+                width:100px;
+                height:100px;
+            }
+            .div_1 
+            {
+                left:150px;
+                top:400px;
+                background-color:black;
+            }  
+            .div_2 
+            {
+                left:500px;
+                top:200px;
+                background-color:red;
+            }
+            p.p_1, p.p_2
+            {
+                position:absolute;
+            }
+            p.p_1 
+            {
+                left:50px;
+                top:100px;
+                border:2px solid green;
+            } 
+            p.p_2 
+{
+  left:150px;
+  top:180px;
+  border:2px solid red;
+} 
+p.p1 
+{
+  left:400px;
+  top:35px;
+  border:2px solid green;
+  position:fixed;
+}
+    </style>
+</head>
+<body>
+  <header>
+    <img src="img/baner_glowny.png" />
+</header>
+<nav>
+    <a href="index.html">Start</a>
+    <a href="akapity.html">akapity</a>
+    <a href="formularze.html">Formularze 1</a>
+    <a href="tabele.html">Tabele</a>
+    <a href="elementy_osadzone.html">Multimedia</a>
+    <a href="warstwy.html">Warstwy</a>
+    <a href="pozycjonowanie.html">Pozycjonowanie</a>
+    <a href="display.html">Display</a>
+    <a href="kolory.html">Kolory</a>
+    <a href="czcionka.html">Tekst</a>
+    <a href="galeria.html">Galeria</a>
+</nav>
+    <main>
+        <aside>
+            to jes aside
+        </aside>
+    
+            <article>
+              <section>
+                <h1>Pozycjonowanie statyczne - <i>static</i></h1>
+                <div class="div_1"></div>
+                    Ala ma kota
+                <div class="div_2"></div>
+              </section> 
+              <section>
+                <h1>Pozycjonowanie względne (relatywne) - <i>relative</i></h1>
+                <p>Akapit 1 - pozycjonowanie domyślne</p>
+                <p>Akapit 2 - pozycjonowanie domyślne</p>
+                <p style="position:relative; left:50px; top:25px;">Akapit 3 - pozycjonowanie relatywne</p>
+            </section>
+            <section>
+                <h1>Pozycjonowanie bezwzględne (absolutne) - <i>absolute</i></h1>
+                <p class="p_1">
+                    Tekst pierwszego akapitu absolute.
+                  </p>
+                  <p class="p_2">
+                    Tekst drugiego akapitu absolutne.
+                  </p>
+            </section> 
+            <section>
+                <h1>Pozycjonowanie ustalone - <i>fixed</i></h1>
+                <p class="p1">
+                    Tekst pierwszego akapitu fixed.
+                  </p>
+                  <p class="p2">
+                    Tekst drugiego akapitu.
+                  </p>
+                  <p class="p1" style="top:2000px;">
+                    Tekst trzeciego akapitu.
+                  </p>
+            </section>
+            </article>
+            
+        
+    </main>
+    <footer></footer>
+</body>
+</html>

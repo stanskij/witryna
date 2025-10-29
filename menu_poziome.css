@@ -1,0 +1,102 @@
+div#menu_poziome a
+{
+  height:30px; 
+  width:125px;
+  background-color:green;
+  line-height:30px; 
+  text-align:center;
+  display:inline-block;
+  text-decoration:none;
+  font-family:Arial; 
+  font-size:10px; 
+  color:white; 
+  font-weight:bold; 
+  border:3px solid silver;
+  letter-spacing:1px;
+  cursor:default;
+  border-radius: 10px;
+
+  
+}
+
+div#menu_poziome a:hover
+{
+  display:block;
+  width:125px;
+  height:30px;
+  border: 2px solid rgb(224, 227, 93);
+  z-index: 700;
+  
+}
+
+div#menu_poziome ol 
+{
+  list-style-type:none;/*likwidujemy marker listy*/
+}
+div#menu_poziome ol ul
+{
+  display:none;/*ul przynależne ol jest niewidoczne*/
+  margin:10px;/*marginesy zewnętrzne*/
+  padding:0;/*marginesy wewnętrzne*/
+  
+  
+}
+div#menu_poziome li  
+{
+  width:125px;/*długość pól menu*/
+  cursor:default;/*nad tekstem pozostaje jako strzałka*/
+  border-top:1px solid yellow;/*górna krawędź pola*/
+  border-left:1px solid yellow;/*lewa krawędź pola*/
+  border-radius: 10px;
+  margin: 20px;
+}
+div#menu_poziome li:hover, li a:hover
+{
+  background-color:transparent; /*kolor tła po najechaniu kursorem myszki*/
+  width:125px;
+  border-radius: 10px;
+  transform: scale(1.2);
+  transition: 2s;
+
+
+
+}
+div#menu_poziome ol li  
+{
+  float:left;/*pola główne ustawiają się w jednej linii*/
+  border-left-color: transparent;
+  border-top-color: transparent;
+  width: 125px;
+}
+div#menu_poziome ol > li:hover > ul
+{
+  display:block;
+  list-style-type:none;
+  background-color: transparent;
+  margin-left: 5px;
+
+}
+
+div#menu_poziome ul li  
+{
+  margin: 0;
+
+}
+
+.pozycja
+{
+  height:30px; 
+  width:125px;
+  background-color:green;
+  line-height:30px; 
+  text-align:center;
+  display:inline-block;
+  text-decoration:none;
+  font-family:Arial; 
+  font-size:10px; 
+  color:white; 
+  font-weight:bold; 
+  border:3px solid silver;
+  letter-spacing:1px;
+  cursor:default;border-radius: 10px;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style1.css" rel="stylesheet" type="text/css" />
+    <link href="style2.css" rel="stylesheet" type="text/css" />
+    <link href="styl_flex.css" rel="stylesheet" type="text/css" />
+    <style>
+    .display_block, .display_inline, .display_inline_block
+    {
+        width:100px;
+        height:100px;
+        color:white;
+    } 
+    .display_block 
+{
+  display:block;
+}   
+.display_inline
+{
+  display:inline;
+}
+.display_inline_block
+{
+  display:inline-block;
+  margin: 20px;
+  padding: 10px;
+}
+  .menu, .submenu
+  {
+    display:block;
+    position:relative;
+    height:40px;
+    left:20px;
+    top:20px;
+    line-height:40px;
+    text-align:center;
+    background-color:black;
+    color:white;
+    width:75px;
+  }
+  .menu .submenu
+  {
+    display:none;
+    left: 100px;
+    top:0;
+    background-color:red;
+  } 
+  .menu:hover > .submenu
+  {
+    display:block;
+    top: -40px;
+    left: 75px;
+  }
+    </style>
+</head>
+<body>
+  <header>
+    <img src="img/baner_glowny.png" />
+</header>
+<nav>
+    <a href="index.html">Start</a>
+    <a href="akapity.html">akapity</a>
+    <a href="formularze.html">Formularze 1</a>
+    <a href="tabele.html">Tabele</a>
+    <a href="elementy_osadzone.html">Multimedia</a>
+    <a href="warstwy.html">Warstwy</a>
+    <a href="pozycjonowanie.html">Pozycjonowanie</a>
+    <a href="display.html">Display</a>
+    <a href="kolory.html">Kolory</a>
+    <a href="czcionka.html">Tekst</a>
+    <a href="galeria.html">Galeria</a>
+</nav>
+    <main>
+        <aside>
+            to jes aside
+        </aside>
+    
+            <article>
+              <section>
+                <div class="display_block" style="background-color:black;">Blok 1</div>
+                <div class="display_block" style="background-color:red;">Blok 2</div>
+              </section>
+             
+              <section>
+                <div class="display_inline" style="background-color:black;">Blok 1</div>
+                <div class="display_inline" style="background-color:red;">Blok 2</div>
+              </section>
+              <section>
+                <div class="display_inline_block" style="background-color:black;">Blok 1</div>
+                <div class="display_inline_block" style="background-color:red;">Blok 2</div>
+              </section>   
+            
+                <section>
+                    <div class="menu">
+                        menu
+                        <div class="submenu">
+                          submenu
+                        </div>
+                        <div class="submenu">
+                            <a href="http://wp.pl" target="_blank">wp.pl</a>
+                          </div>
+                      </div> 
+                </section>
+            </article>
+    </main>
+    <footer></footer>
+</body>
+</html>

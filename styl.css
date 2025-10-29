@@ -1,0 +1,156 @@
+p
+{
+  font-family:Verdana,Arial,sans-serif;
+  font-size:14px;
+  color:red;
+  border:2px solid rgb(0,0,255);
+}
+p.akapit_1{
+  font-size: 14px;
+  color: #4944ce;
+}
+p#akapit_2{
+  font-size:6px;
+  color:blue;
+}
+.uniwersalna
+{
+  font-size:32px;
+  color:rgb(216, 225, 50);
+  background-color: #4944ce;
+}
+#artykul_2
+{
+  font-size:32px;
+  color:rgb(59, 50, 225);
+  background-color: #b0ce44;
+}
+
+a
+{
+  height:30px; 
+  width:100px;
+  background-color:green;
+  line-height:30px; 
+  text-align:center;
+  display:inline-block;
+  text-decoration:none;
+  font-family:Arial; 
+  font-size:10px; 
+  color:white; 
+  font-weight:bold; 
+  border:3px solid silver;
+  letter-spacing:1px;
+  cursor:default;
+  border-radius: 10px;
+}
+
+a:hover
+{
+  color:red;
+  background-color: aqua;
+  transform: scale(1.1);
+  transition:1s;
+}
+
+a:active
+{
+  color:green;
+}
+
+nav{
+  left:-10px;
+  top:-10px;
+  border:2px solid red;
+  position:fixed;
+  width:100%;
+}
+
+p
+    {
+      font-family:Verdana,Arial,sans-serif;
+      font-size:14px;
+      color:red;
+      border:2px solid blue;
+    }
+    div > p 
+    {
+      color:rgb(0, 213, 255);
+    }
+
+    div span 
+    {
+      color:rgb(55, 255, 0);
+    }
+    .div_1, .div_2
+        {
+        width:100px;
+        height:100px;
+        }
+        .div_1 
+        {
+        left:50px;
+        top:100px;
+        background-color:black;
+        }
+        .div_2 
+        {
+        left:100px;
+        top:100px;
+        background-color:red;
+        }
+        p.p_1, p.p_2
+{
+  position:absolute;
+}
+p.p_1 
+{
+  left:50px;
+  top:10px;
+  border:2px solid green;
+}
+p.p_2 
+{
+  left:150px;
+  top:18px;
+  border:2px solid red;
+}
+
+p.p_3 
+{
+  left:50px;
+  top:10px;
+  border:2px solid green;
+  position:absolute;
+}
+p.p_4 
+{
+  left:150px;
+  top:18px;
+  border:2px solid red;
+  position:fixed;
+}
+
+table, th, td
+    {
+      border-collapse:collapse;
+      border:1px solid black;
+      padding:5px;
+    }
+
+    p
+    {
+      font-family:Verdana,Arial,sans-serif;
+      font-size:14px;
+      color:red;
+      border:2px solid blue;
+    }
+    div > p 
+    {
+      color:rgb(0, 213, 255);
+    }
+
+    div span 
+    {
+      color:rgb(55, 255, 0);
+    }

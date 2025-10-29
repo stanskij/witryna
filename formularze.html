@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="kurs HTML5, kurs CSS, strona WWW, witryna internetowa, webmaster, pozycjonowanie" />
+  <meta name="description" content="Podstawy HTML5 dla uczniów technikum informatycznego" /> 
+  <meta name="author" content="Imię i nazwisko" />
+  <meta name="generator" content="Notepad++" />
+  <meta name="robots" content="all" />
+  <meta http-equiv="refresh" content="x" />
+  <meta http-equiv="refresh" content="x; url=strona2.html" />
+  <link href="style1.css" rel="stylesheet" type="text/css" />
+  <link href="style2.css" rel="stylesheet" type="text/css" />
+  <link href="styl_flex.css" rel="stylesheet" type="text/css" />
+  <title>Document</title>
+  <script src="script1.js"></script>
+</head>
+<body>
+  <header>
+    <img src="img/baner_glowny.png" />
+</header>
+<nav>
+    <a href="index.html">Start</a>
+    <a href="akapity.html">akapity</a>
+    <a href="formularze.html">Formularze 1</a>
+    <a href="tabele.html">Tabele</a>
+    <a href="elementy_osadzone.html">Multimedia</a>
+    <a href="warstwy.html">Warstwy</a>
+    <a href="pozycjonowanie.html">Pozycjonowanie</a>
+    <a href="display.html">Display</a>
+    <a href="kolory.html">Kolory</a>
+    <a href="czcionka.html">Tekst</a>
+    <a href="galeria.html">Galeria</a>
+</nav>
+  <main>
+    <aside>
+      to jest aside
+    </aside>
+        <article>
+            <h3>Ramy formularza</h3>
+            <form 
+            action="http://www.teacher.webd.pl/kurs_html5/k_2_6_1.php#form_to_php" 
+            method="post"
+            novalidate="novalidate"
+            autocomplete="on">
+                <input type="text" name="tekst_1" value="" />
+                <input type="submit" name="przycisk_1" value="Wyślij" />
+            </form>  
+            <form action="http://www.teacher.webd.pl/kurs_html5/k_2_6_1.php#form_to_php" method="get">
+                <input type="text" name="tekst_2" value="Ala ma kota" />
+                <input type="submit" name="przycisk_2" value="Wyślij" />
+            </form>
+            
+
+            <h3>Wysłanie formularza do programu pocztowego</h3>
+        <form action="mailto:jan_kowalski@example.com" method="post">
+			<input type="text" name="tekst_1" value="" />
+			<input type="submit" name="przycisk_1" value="Wyślij" />
+        </form>
+          <h3>Wysłanie formularza z przyciskiem obrazkowym do programu pocztowego</h3>
+        <form action="mailto:jan_kowalski@example.com" method="post">
+            <input type="text" name="tekst_1" value="" /><br />
+            <input type="image" src="koperta.png" name="przycisk_1" alt="Wyślij" />
+        </form>  
+
+          <h2>Atrybuty pól wprowadzania danych</h2>
+          <form action="mailto:jan_kowalski@example.com" method="post" enctype="text/plain">
+            <fieldset>
+              <legend>size, autofocus, required</legend>
+              <input type="text" name="tekst_1" value="size 10" size="10" style="font-family: Courier;" />
+              <input type="text" name="tekst_2" value="autofocus" autofocus="autofocus" />
+              <input type="text" name="tekst_3" value="required" required="required" />
+              <input type="submit" name="przycisk_1" value="Ok" />
+            </fieldset>
+          </form>  
+          <br /><br />
+          <form action="mailto:jan_kowalski@example.com" method="post" enctype="text/plain">
+            <fieldset>
+              <legend>maxlength, autocomplete, readonly, disabled</legend>
+              <input type="text" name="tekst_4" value="maxlength 15" maxlength="15" />
+              <input type="text" name="tekst_5" value="autocomplete off" autocomplete="off" />
+              <input type="text" name="tekst_6" value="readonly" readonly="readonly" />
+              <input type="text" name="tekst_7" value="disabled" disabled="disabled" />
+              <input type="submit" name="przycisk_2" value="Ok" />
+              <input type="submit" name="przycisk_3" value="disabled" disabled="disabled" />
+            </fieldset>
+          </form>  
+          <br /><br />
+          <form action="mailto:jan_kowalski@example.com" method="post" enctype="text/plain">
+            <fieldset>
+              <legend>min, max, placeholder</legend>
+              <label></label><input type="number" name="number_1" value="10" min="5" max="20" />
+              <input type="number" name="number_2" value="100" placeholder="5"  />
+              <input type="submit" name="przycisk_4" value="Ok" /></label>
+            </fieldset>
+          </form>   
+
+		<hr />
+
+		<h2>Pola wielokrotnego wyboru -checkbox</h2>
+		<form action="mailto:jan_kowalski@example.com" method="post" enctype="text/plain">
+		  <fieldset style="width:540px;margin:10px;">
+			<legend>Zaznacz miejsca, w które udałbyś się na wakacje</legend>
+			<p>
+			<label><input type="checkbox" name="checkbox_1" value="gory" />W góry</label>
+			<label><input type="checkbox" name="checkbox_2" value="morze" />Nad morze</label>
+			<label><input type="checkbox" name="checkbox_3" value="jezioro" />Nad jezioro</label>
+			<label><input type="checkbox" name="checkbox_4" value="las" />Do lasu</label>
+			<label><input type="checkbox" name="checkbox_5" value="wies" />Na wieś</label>
+			<label><input type="checkbox" name="checkbox_6" value="miasto" />Do miasta</label></p>
+			<input type="submit" name="przycisk_1" value="Ok" />
+		  </fieldset>
+		</form>  
+		<hr />
+		<h2>Pola jednokrotnego wyboru - radio</h2>
+		<form action="mailto:jan_kowalski@example.com" method="post" enctype="text/plain">
+		  <fieldset>
+			<legend>Zaznacz miejsce, w które udałbyś się na wakacje</legend>
+			<input type="radio" name="opcja" value="gory" />W góry
+			<input type="radio" name="opcja" value="morze" />Nad morze
+			<input type="radio" name="opcja" value="jezioro" />Nad jezioro
+			<input type="radio" name="opcja" value="las" />Do lasu
+			<input type="radio" name="opcja" value="wies" />Na wieś
+			<input type="radio" name="opcja" value="miasto" />Do miasta
+			<input type="submit" name="przycisk" value="Ok" />
+		  </fieldset>
+		</form> 
+
+		<h2>Obszar tekstowy (pole tekstowe wielowierszowe) - textarea</h2>
+			<form action="mailto:jan_kowalski@example.com" method="post" enctype="text/plain">
+			  <textarea name="opis_dnia" cols="50" rows="10">Tutaj opiszę swój dzisiejszy dzień. Wstałem o godz 6. Umyłem się, zjadłem pyszne śniadanko i poszedłem na spacer ze swoim psem Reksiem. Potem poszedłem do szkoły gdzie się męczyłem przez 6 godzin. Po szkole wróciłem do domu i zjadłem obiadek.</textarea>
+			  <br />
+			  <input type="submit" name="przycisk" value="Ok" />
+			</form>
+
+
+		<hr />
+			<h1>Tu zaczyna się nowa sekcja</h1>
+		</hr />
+
+		<h2>Pole wpisywania hasła - password</h2>
+			<form action="mailto:jan_kowalski@example.com" method="post" enctype="text/plain">
+			  <input type="password" name="haslo" value="" />
+			  Wpisz hasło i kliknij przycisk Ok	
+			  <input type="submit" name="przycisk" value="Ok" />
+			</form>  
+
+		<h2>Inne typy pól formularza typu <i>type</i></h2>
+		<form action="mailto:jan_kowalski@example.com" method="post" enctype="text/plain">
+			  <input type="tel" name="tel_1" pattern="^[0-9]{10}$"value="" /> Telefon<br /><br />
+			  <input type="url" name="url_1" value="" /> Strona WWW<br /><br />
+			  <input type="email" name="email_1" value="" /> E-mail<br /><br />
+			  <input type="text" name="kod_pocztowy_1" value="" required="required" 
+  pattern="^[0-9]{2}-[0-9]{3}$" /> Kod pocztowy 1<br /><br />
+  <input type="text" name="kod_pocztowy_2" value="" required="required" 
+  pattern="^\d{2}\-\d{3}$" /> Kod pocztowy 2<br /><br />
+			  <input type="date" name="date_1" value="" /> Data<br /><br />
+			  <input type="time" name="time_1" value="" /> Która godzina<br /><br />
+			  <input type="month" name="month_1" value="" /> Miesiąc<br /><br />
+			  <input type="week" name="week_1" value="" /> Tydzień<br /><br />
+			  <input type="search" name="search_1" value="" /> Znajdź<br /><br />
+			  <input type="range" name="range_1" value="" min="0" max="100" /> Zakres liczb<br /><br />
+			  <input type="color" name="color_1" value="" /> Kolor<br /><br />
+			  <input type="reset" name="reset_1" value="Reset" />
+			  <input type="submit" name="przycisk_1" value="Ok" />
+			</form>
+
+		<h2>Element meter</h2>
+		<fieldset style="width:350px;">
+		  <legend>Graficzna prezentacji wartości liczbowych</legend>
+		  <meter min="0" max="20" value="10"></meter> Liczba 10 w przedziale 0..20<br /><br />
+		  <meter min="0" max="100" value="10"></meter> Liczba 10 w przedziale 0..100
+		</fieldset>
+
+		<h2>Element progress</h2>
+		<fieldset style="width:350px;"> 
+		  <legend> Prezentacja znacznika progress</legend> 
+		  <progress  id="p" max="100" value="30"> </progress>  Znacznik postępu
+		</fieldset>
+		</article>
+  </main>
+    <footer>
+    Stopka: autorem strony jest JS
+  </footer>
+  <script src="script2.js"></script>
+</body>
+</html>

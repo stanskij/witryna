@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style1.css" rel="stylesheet" type="text/css" />
+    <link href="style2.css" rel="stylesheet" type="text/css" />
+    <link href="styl_flex.css" rel="stylesheet" type="text/css" />
+    <style>
+      div.rama
+{
+  display:block;
+  position:relative;
+  width:870px;
+  height:600px;
+  background-color:transparent;
+}    
+  
+  div.rama > div.warstwa
+  {
+    position:absolute;
+    left:0;
+    top:0;
+    width:870px;
+    height:600px;
+    margin:0;
+    padding:0;
+    background-repeat:no-repeat;
+    background-position:0 0;
+    background-color:transparent;
+  }
+    </style>
+</head>
+<body>
+  <header>
+    <img src="img/baner_glowny.png" />
+</header>
+<nav>
+    <a href="index.html">Start</a>
+    <a href="akapity.html">akapity</a>
+    <a href="formularze.html">Formularze 1</a>
+    <a href="tabele.html">Tabele</a>
+    <a href="elementy_osadzone.html">Multimedia</a>
+    <a href="warstwy.html">Warstwy</a>
+    <a href="pozycjonowanie.html">Pozycjonowanie</a>
+    <a href="display.html">Display</a>
+    <a href="kolory.html">Kolory</a>
+    <a href="czcionka.html">Tekst</a>
+    <a href="galeria.html">Galeria</a>
+</nav>
+    <main>
+        <aside>
+            to jes aside
+        </aside>
+    
+            <article>
+              <section>
+                <div class="rama">
+                  <div class="warstwa" style="background-image:url(obrazki/as.png); z-index:1;"></div>
+                  <div class="warstwa" style="background-image:url(obrazki/krol.png); z-index:2;"></div>
+                  <div class="warstwa" style="background-image:url(obrazki/dama.png); z-index:3;"></div>
+                  <div class="warstwa" style="background-image:url(obrazki/walet.png); z-index:4;"></div>
+                  <div class="warstwa" style="background-image:url(obrazki/dziesiatka.png); z-index:5;"></div>
+                </div>
+              </section>  
+            </article>
+        
+    </main>
+    <footer></footer>
+</body>
+</html>
